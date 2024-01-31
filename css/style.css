@@ -1,75 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Shadows Into Light', cursive;
 }
 
 body{
-    background-color: #181818;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     height: 100vh;
-}
-
-.container {
-    background-color: #fff;
-    border-radius: 30px;
-    width: 500px;
-    height: 500px;
-    padding: 15px;
-}
-
-/* Estilo para o tabuleiro */
-.box {
-    display: grid;
-    height: 21rem;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 5px;
-    background-color: #181818; 
-    padding: 5px;
-    margin-top: 25px;
-    border-radius: 5px;
-}
-
-/* Estilo para as células */
-.cell {
-    background-color: #b7ade6;
     display: flex;
-    justify-content: center;
     align-items: center;
-    font-size: 2rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.cell:hover {
-    background-color: #7264b1; /* azul claro mais escuro */
-}
-
-/* Estilo para o texto do status */
-.status {
-    margin-top: 10px;
-    font-size: 1.2rem;
-}
-
-/* Estilo para o botão de reinício */
-.restart-btn {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #4b4a4b;
+    justify-content: center;
+    background-color: #d14141;
     color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
-.restart-btn:hover {
-    background-color: #eef132; 
-    border: 1px solid #000;
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+h1, h3{
+    text-align: center;
+}
+
+hr{
+    font-weight: bold;
+    height: 3px;
+    background: #fff;
+    margin-bottom: 10px;
+}
+
+.box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box button{
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 50px;
+    background-color: #0000001e;
+    border: none;
+    transition: 1s;
+}
+
+.box button:hover{
+    background-color: #fdfb77;
+}
+
+
+.hidden-btn{
+    width: 60%;
+    height: 45px;
+    font-size: 1.5rem;
+    margin-left: 20%;
+    background-color: #fdfb77;
     color: #000;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border: none;
+    transition: 2s;
+}
+
+.hidden-btn:hover{
+    background-color: #d3d145;
 }
