@@ -17,7 +17,7 @@ let positions = [
 
 function init() {
     selected = [];
-    document.querySelector(".hidden-title").textContent = "Jogo da Velha"; // Redefine o título
+    document.querySelector(".hidden-title").textContent = "Jogo da Velha"; 
     currentPlayer.innerHTML = `VEZ DO: ${player}`;
 
     document.querySelectorAll(".box button").forEach((item) => {
@@ -27,7 +27,7 @@ function init() {
 }
 
 document.querySelector(".hidden-btn").addEventListener("click", function() {
-    init(); // Chama a função init() quando o botão for clicado
+    init();
 });
 
 
