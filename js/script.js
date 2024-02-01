@@ -17,15 +17,19 @@ let positions = [
 
 function init() {
     selected = [];
-
+    document.querySelector(".hidden-title").textContent = "Jogo da Velha"; // Redefine o título
     currentPlayer.innerHTML = `VEZ DO: ${player}`;
-
 
     document.querySelectorAll(".box button").forEach((item) => {
         item.innerHTML = "";
         item.addEventListener("click", newMove);
     });
 }
+
+document.querySelector(".hidden-btn").addEventListener("click", function() {
+    init(); // Chama a função init() quando o botão for clicado
+});
+
 
 init();
 
